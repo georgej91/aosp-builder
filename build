@@ -28,16 +28,16 @@ ccache -s
 up(){
 	#curl --upload-file $1 https://transfer.sh/$(basename $1); echo
 	# 14 days, 10 GB limit
-}
+#}
 
-tg(){
+#tg(){
 	bot_api=1832556418:AAFsspt0F0w29b09cCBT4qnqpPlCsp1njek # Your tg bot api, dont use my one haha
 	your_telegram_id=$1 # No need to touch
 	msg=$2 # No need to touch
 	curl -s "https://api.telegram.org/bot${bot_api}/sendmessage" --data "text=$msg&chat_id=${your_telegram_id}"
-}
+#}
 
-id=1237050111 # Your telegram id
+#id=1237050111 # Your telegram id
 
 # Build command! j10 for 10 cpu, j8 for 8 cpu, otherwise memeroy will end up even its 24G
 # Upload rom zip file if succeed to build! Send notification to tg! And send shell to tg if build fails!
