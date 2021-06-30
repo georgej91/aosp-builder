@@ -16,7 +16,7 @@ make api-stubs-docs || echo no problem
 make hiddenapi-lists-docs || echo no problem
 make system-api-stubs-docs || echo no problem
 make test-api-stubs-docs || echo no problem
-mka descendant -j18 &  # I used aex build command
+mka descendant -j 8 &  # I used aex build command
 sleep 85m # Lets give some space for uploading ccache
 kill %1 # better way to kill it!
 ccache -s
@@ -31,10 +31,10 @@ up(){
 #}
 
 #tg(){
-	bot_api=1832556418:AAFsspt0F0w29b09cCBT4qnqpPlCsp1njek # Your tg bot api, dont use my one haha
-	your_telegram_id=$1 # No need to touch
-	msg=$2 # No need to touch
-	curl -s "https://api.telegram.org/bot${bot_api}/sendmessage" --data "text=$msg&chat_id=${your_telegram_id}"
+	#bot_api=1832556418:AAFsspt0F0w29b09cCBT4qnqpPlCsp1njek # Your tg bot api, dont use my one haha
+	#your_telegram_id=$1 # No need to touch
+	#msg=$2 # No need to touch
+	#curl -s "https://api.telegram.org/bot${bot_api}/sendmessage" --data "text=$msg&chat_id=${your_telegram_id}"
 #}
 
 #id=1237050111 # Your telegram id
