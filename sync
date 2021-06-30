@@ -1,5 +1,5 @@
 #!/bin/bash
-git config --global  user.name "gjka"
+git config --global  user.name "georgej91"
 git config --global  user.email "georgejk@yandex.com"
 
 mkdir -p /tmp/rom # Where to sync source
